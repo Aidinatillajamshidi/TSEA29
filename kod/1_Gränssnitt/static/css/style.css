@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#map-container {
+    grid-column: 1;
+    width: 100%; /* Full width of its grid area */
+    height: calc(100vh - 40px); /* Full height of the viewport minus padding */
+    border: 2px solid #000;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Assuming you want a white background for the map */
+}
+
+.log-command-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px); /* Full height of the viewport minus padding */
+    justify-content: space-between; /* Align children to top and bottom */
+}
+
+.command-log {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 200px;
+    background: black;
+    color: lime;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 20px;
+    border:1px solid #000;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.command-container {
+    display: flex;
+    flex-direction: space-around;
+    align-items: center;
+}
+
+.button, .button_dir {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.info-box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

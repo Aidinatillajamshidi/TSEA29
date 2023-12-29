@@ -1,0 +1,17 @@
+#ifndef INIT_PWM_H
+#define INIT_PWM_H
+
+#define F_CPU 8000000UL // 8 MHz
+
+#include <avr/io.h> /* BEHÖVS ALLA HÄR ELLER? */
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include <stdint.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////
+/* Functions */
+
+void init_PWM(void);
+
+///////////////////////////////////////////////////////////////////////////////////////////
+#endif /* INIT_PWM_H */

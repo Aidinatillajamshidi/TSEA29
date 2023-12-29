@@ -1,0 +1,855 @@
+
+Navigation module.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000022  00800100  0000048c  00000520  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000048c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000011  00800122  00800122  00000542  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000542  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000574  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000090  00000000  00000000  000005b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000bc1  00000000  00000000  00000644  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000093f  00000000  00000000  00001205  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000070d  00000000  00000000  00001b44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000120  00000000  00000000  00002254  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000059b  00000000  00000000  00002374  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000fa  00000000  00000000  0000290f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000060  00000000  00000000  00002a09  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	55 c0       	rjmp	.+170    	; 0x114 <__vector_26>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ec e8       	ldi	r30, 0x8C	; 140
+  a0:	f4 e0       	ldi	r31, 0x04	; 4
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 32       	cpi	r26, 0x22	; 34
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e2       	ldi	r26, 0x22	; 34
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a3 33       	cpi	r26, 0x33	; 51
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	9d d1       	rcall	.+826    	; 0x3fe <main>
+  c4:	e1 c1       	rjmp	.+962    	; 0x488 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	aa c1       	rjmp	.+852    	; 0x41c <__vector_default>
+
+000000c8 <init_Styr_Slave>:
+		styr_index++;
+
+		// Check if we have reached the end of the buffer
+		if (styr_index == BUFFER_SIZE) {
+			// Reset the index to start from the beginning of the buffer
+			styr_index = 0;
+  c8:	85 ec       	ldi	r24, 0xC5	; 197
+  ca:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+  ce:	84 e8       	ldi	r24, 0x84	; 132
+  d0:	80 93 ba 00 	sts	0x00BA, r24	; 0x8000ba <__TEXT_REGION_LENGTH__+0x7e00ba>
+  d4:	78 94       	sei
+  d6:	08 95       	ret
+
+000000d8 <receive_Data>:
+	}
+}
+
+void receive_Data() {
+	// Receive data and store it in the buffer using received_index
+	received_data_buffer[received_index] = TWDR;
+  d8:	e0 91 22 01 	lds	r30, 0x0122	; 0x800122 <__data_end>
+  dc:	f0 e0       	ldi	r31, 0x00	; 0
+  de:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+  e2:	e7 5d       	subi	r30, 0xD7	; 215
+  e4:	fe 4f       	sbci	r31, 0xFE	; 254
+  e6:	80 83       	st	Z, r24
+	// Increment the received_index for the next received byte
+	received_index++;
+  e8:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <__data_end>
+  ec:	8f 5f       	subi	r24, 0xFF	; 255
+  ee:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <__data_end>
+
+	// Check if we have reached the end of the buffer
+	if (received_index < BUFFER_SIZE) {
+  f2:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <__data_end>
+  f6:	84 30       	cpi	r24, 0x04	; 4
+  f8:	20 f4       	brcc	.+8      	; 0x102 <receive_Data+0x2a>
+		// If it's not the last byte, send ACK and clear TWINT to start the data transmission
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+  fa:	85 ec       	ldi	r24, 0xC5	; 197
+  fc:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+ 100:	08 95       	ret
+		} 
+	else {
+		// If it's the last byte, prepare to send NACK and clear TWINT
+		TWCR = (1 << TWINT) | (0 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 102:	85 e8       	ldi	r24, 0x85	; 133
+ 104:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		// Reset the index to start from the beginning of the buffer
+		received_index = 0;
+ 108:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <__data_end>
+		dataRecieved = 1;
+ 10c:	81 e0       	ldi	r24, 0x01	; 1
+ 10e:	80 93 28 01 	sts	0x0128, r24	; 0x800128 <dataRecieved>
+ 112:	08 95       	ret
+
+00000114 <__vector_26>:
+	}
+}
+
+
+
+ISR(TWI_vect) {
+ 114:	1f 92       	push	r1
+ 116:	0f 92       	push	r0
+ 118:	0f b6       	in	r0, 0x3f	; 63
+ 11a:	0f 92       	push	r0
+ 11c:	11 24       	eor	r1, r1
+ 11e:	0b b6       	in	r0, 0x3b	; 59
+ 120:	0f 92       	push	r0
+ 122:	2f 93       	push	r18
+ 124:	3f 93       	push	r19
+ 126:	4f 93       	push	r20
+ 128:	5f 93       	push	r21
+ 12a:	6f 93       	push	r22
+ 12c:	7f 93       	push	r23
+ 12e:	8f 93       	push	r24
+ 130:	9f 93       	push	r25
+ 132:	af 93       	push	r26
+ 134:	bf 93       	push	r27
+ 136:	ef 93       	push	r30
+ 138:	ff 93       	push	r31
+	//TWI status flags
+	switch (TW_STATUS) {
+ 13a:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7e00b9>
+ 13e:	88 7f       	andi	r24, 0xF8	; 248
+ 140:	80 39       	cpi	r24, 0x90	; 144
+ 142:	09 f4       	brne	.+2      	; 0x146 <__vector_26+0x32>
+ 144:	e4 c0       	rjmp	.+456    	; 0x30e <__vector_26+0x1fa>
+ 146:	b8 f4       	brcc	.+46     	; 0x176 <__vector_26+0x62>
+ 148:	80 37       	cpi	r24, 0x70	; 112
+ 14a:	09 f4       	brne	.+2      	; 0x14e <__vector_26+0x3a>
+ 14c:	b0 c0       	rjmp	.+352    	; 0x2ae <__vector_26+0x19a>
+ 14e:	48 f4       	brcc	.+18     	; 0x162 <__vector_26+0x4e>
+ 150:	80 36       	cpi	r24, 0x60	; 96
+ 152:	09 f4       	brne	.+2      	; 0x156 <__vector_26+0x42>
+ 154:	a0 c0       	rjmp	.+320    	; 0x296 <__vector_26+0x182>
+ 156:	88 36       	cpi	r24, 0x68	; 104
+ 158:	09 f4       	brne	.+2      	; 0x15c <__vector_26+0x48>
+ 15a:	a3 c0       	rjmp	.+326    	; 0x2a2 <__vector_26+0x18e>
+ 15c:	81 11       	cpse	r24, r1
+ 15e:	f9 c0       	rjmp	.+498    	; 0x352 <__vector_26+0x23e>
+ 160:	ea c0       	rjmp	.+468    	; 0x336 <__vector_26+0x222>
+ 162:	80 38       	cpi	r24, 0x80	; 128
+ 164:	09 f4       	brne	.+2      	; 0x168 <__vector_26+0x54>
+ 166:	af c0       	rjmp	.+350    	; 0x2c6 <__vector_26+0x1b2>
+ 168:	88 38       	cpi	r24, 0x88	; 136
+ 16a:	09 f4       	brne	.+2      	; 0x16e <__vector_26+0x5a>
+ 16c:	c9 c0       	rjmp	.+402    	; 0x300 <__vector_26+0x1ec>
+ 16e:	88 37       	cpi	r24, 0x78	; 120
+ 170:	09 f0       	breq	.+2      	; 0x174 <__vector_26+0x60>
+ 172:	ef c0       	rjmp	.+478    	; 0x352 <__vector_26+0x23e>
+ 174:	a2 c0       	rjmp	.+324    	; 0x2ba <__vector_26+0x1a6>
+ 176:	80 3b       	cpi	r24, 0xB0	; 176
+ 178:	d1 f1       	breq	.+116    	; 0x1ee <__vector_26+0xda>
+ 17a:	48 f4       	brcc	.+18     	; 0x18e <__vector_26+0x7a>
+ 17c:	80 3a       	cpi	r24, 0xA0	; 160
+ 17e:	09 f4       	brne	.+2      	; 0x182 <__vector_26+0x6e>
+ 180:	e0 c0       	rjmp	.+448    	; 0x342 <__vector_26+0x22e>
+ 182:	88 3a       	cpi	r24, 0xA8	; 168
+ 184:	99 f0       	breq	.+38     	; 0x1ac <__vector_26+0x98>
+ 186:	88 39       	cpi	r24, 0x98	; 152
+ 188:	09 f0       	breq	.+2      	; 0x18c <__vector_26+0x78>
+ 18a:	e3 c0       	rjmp	.+454    	; 0x352 <__vector_26+0x23e>
+ 18c:	c7 c0       	rjmp	.+398    	; 0x31c <__vector_26+0x208>
+ 18e:	80 3c       	cpi	r24, 0xC0	; 192
+ 190:	09 f4       	brne	.+2      	; 0x194 <__vector_26+0x80>
+ 192:	75 c0       	rjmp	.+234    	; 0x27e <__vector_26+0x16a>
+ 194:	20 f4       	brcc	.+8      	; 0x19e <__vector_26+0x8a>
+ 196:	88 3b       	cpi	r24, 0xB8	; 184
+ 198:	09 f4       	brne	.+2      	; 0x19c <__vector_26+0x88>
+ 19a:	4b c0       	rjmp	.+150    	; 0x232 <__vector_26+0x11e>
+ 19c:	da c0       	rjmp	.+436    	; 0x352 <__vector_26+0x23e>
+ 19e:	88 3c       	cpi	r24, 0xC8	; 200
+ 1a0:	09 f4       	brne	.+2      	; 0x1a4 <__vector_26+0x90>
+ 1a2:	73 c0       	rjmp	.+230    	; 0x28a <__vector_26+0x176>
+ 1a4:	88 3f       	cpi	r24, 0xF8	; 248
+ 1a6:	09 f4       	brne	.+2      	; 0x1aa <__vector_26+0x96>
+ 1a8:	c0 c0       	rjmp	.+384    	; 0x32a <__vector_26+0x216>
+ 1aa:	d3 c0       	rjmp	.+422    	; 0x352 <__vector_26+0x23e>
+		//Case TWI slave transfer slave_address (0xA8)
+		case TW_ST_SLA_ACK:
+		if (styr_index == BUFFER_SIZE - 1) {
+ 1ac:	80 91 23 01 	lds	r24, 0x0123	; 0x800123 <styr_index>
+ 1b0:	83 30       	cpi	r24, 0x03	; 3
+ 1b2:	81 f4       	brne	.+32     	; 0x1d4 <__vector_26+0xc0>
+			TWDR = styr_data_buffer[styr_index];
+ 1b4:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 1b8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1ba:	ec 5d       	subi	r30, 0xDC	; 220
+ 1bc:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1be:	80 81       	ld	r24, Z
+ 1c0:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			styr_index = 0;
+ 1c4:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <styr_index>
+			// If it's the last byte, prepare to send NACK
+			TWCR = (1 << TWINT) | (0 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 1c8:	85 e8       	ldi	r24, 0x85	; 133
+ 1ca:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 1;
+ 1ce:	81 e0       	ldi	r24, 0x01	; 1
+ 1d0:	85 b9       	out	0x05, r24	; 5
+ 1d2:	0d c0       	rjmp	.+26     	; 0x1ee <__vector_26+0xda>
+			
+		}
+		else {
+			TWDR = styr_data_buffer[styr_index];
+ 1d4:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 1d8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1da:	ec 5d       	subi	r30, 0xDC	; 220
+ 1dc:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1de:	80 81       	ld	r24, Z
+ 1e0:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			//styr_index++;
+			// If it's not the last byte, send ACK
+			TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 1e4:	85 ec       	ldi	r24, 0xC5	; 197
+ 1e6:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 2;
+ 1ea:	82 e0       	ldi	r24, 0x02	; 2
+ 1ec:	85 b9       	out	0x05, r24	; 5
+		}
+
+		
+		//Case (0xB0) Arbitration lost in Slave Transmit, SLA received with ACK
+		case TW_ST_ARB_LOST_SLA_ACK:
+		if (styr_index == BUFFER_SIZE - 1) {
+ 1ee:	80 91 23 01 	lds	r24, 0x0123	; 0x800123 <styr_index>
+ 1f2:	83 30       	cpi	r24, 0x03	; 3
+ 1f4:	81 f4       	brne	.+32     	; 0x216 <__vector_26+0x102>
+			TWDR = styr_data_buffer[styr_index];
+ 1f6:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 1fa:	f0 e0       	ldi	r31, 0x00	; 0
+ 1fc:	ec 5d       	subi	r30, 0xDC	; 220
+ 1fe:	fe 4f       	sbci	r31, 0xFE	; 254
+ 200:	80 81       	ld	r24, Z
+ 202:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			styr_index = 0;
+ 206:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <styr_index>
+			// If it's the last byte, prepare to send NACK
+			TWCR = (1 << TWINT) | (0 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 20a:	85 e8       	ldi	r24, 0x85	; 133
+ 20c:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 3;
+ 210:	83 e0       	ldi	r24, 0x03	; 3
+ 212:	85 b9       	out	0x05, r24	; 5
+ 214:	a0 c0       	rjmp	.+320    	; 0x356 <__vector_26+0x242>
+			;
+		}
+		else {
+			TWDR = styr_data_buffer[styr_index];
+ 216:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 21a:	f0 e0       	ldi	r31, 0x00	; 0
+ 21c:	ec 5d       	subi	r30, 0xDC	; 220
+ 21e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 220:	80 81       	ld	r24, Z
+ 222:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			//styr_index++;
+			// If it's not the last byte, send ACK
+			TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 226:	85 ec       	ldi	r24, 0xC5	; 197
+ 228:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 4;
+ 22c:	84 e0       	ldi	r24, 0x04	; 4
+ 22e:	85 b9       	out	0x05, r24	; 5
+ 230:	92 c0       	rjmp	.+292    	; 0x356 <__vector_26+0x242>
+		}
+		break;
+		
+		//Case (0xB8) TWI slave transfer data
+		case TW_ST_DATA_ACK:
+		if (styr_index == BUFFER_SIZE - 1) {
+ 232:	80 91 23 01 	lds	r24, 0x0123	; 0x800123 <styr_index>
+ 236:	83 30       	cpi	r24, 0x03	; 3
+ 238:	81 f4       	brne	.+32     	; 0x25a <__vector_26+0x146>
+			TWDR = styr_data_buffer[styr_index];
+ 23a:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 23e:	f0 e0       	ldi	r31, 0x00	; 0
+ 240:	ec 5d       	subi	r30, 0xDC	; 220
+ 242:	fe 4f       	sbci	r31, 0xFE	; 254
+ 244:	80 81       	ld	r24, Z
+ 246:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			styr_index = 0;
+ 24a:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <styr_index>
+			// If it's the last byte, prepare to send NACK
+			TWCR = (1 << TWINT) | (0 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 24e:	85 e8       	ldi	r24, 0x85	; 133
+ 250:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 5;
+ 254:	85 e0       	ldi	r24, 0x05	; 5
+ 256:	85 b9       	out	0x05, r24	; 5
+ 258:	12 c0       	rjmp	.+36     	; 0x27e <__vector_26+0x16a>
+			
+		}
+		else {
+			TWDR = styr_data_buffer[styr_index];
+ 25a:	e0 91 23 01 	lds	r30, 0x0123	; 0x800123 <styr_index>
+ 25e:	f0 e0       	ldi	r31, 0x00	; 0
+ 260:	ec 5d       	subi	r30, 0xDC	; 220
+ 262:	fe 4f       	sbci	r31, 0xFE	; 254
+ 264:	80 81       	ld	r24, Z
+ 266:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+			styr_index++;
+ 26a:	80 91 23 01 	lds	r24, 0x0123	; 0x800123 <styr_index>
+ 26e:	8f 5f       	subi	r24, 0xFF	; 255
+ 270:	80 93 23 01 	sts	0x0123, r24	; 0x800123 <styr_index>
+			// If it's not the last byte, send ACK
+			TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 274:	85 ec       	ldi	r24, 0xC5	; 197
+ 276:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 6;
+ 27a:	86 e0       	ldi	r24, 0x06	; 6
+ 27c:	85 b9       	out	0x05, r24	; 5
+			
+		}
+		//case (0xC0)
+		case TW_ST_DATA_NACK:
+		// Release the TWI peripheral to be ready for a new start condition
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 27e:	85 ec       	ldi	r24, 0xC5	; 197
+ 280:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 7;
+ 284:	87 e0       	ldi	r24, 0x07	; 7
+ 286:	85 b9       	out	0x05, r24	; 5
+		
+		break;
+ 288:	66 c0       	rjmp	.+204    	; 0x356 <__vector_26+0x242>
+		//case 0xC8
+		case TW_ST_LAST_DATA:
+		
+		TWCR = (1 << TWEN) | (1 << TWEA) | (1 << TWINT) | (1 << TWIE);
+ 28a:	85 ec       	ldi	r24, 0xC5	; 197
+ 28c:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 8;
+ 290:	88 e0       	ldi	r24, 0x08	; 8
+ 292:	85 b9       	out	0x05, r24	; 5
+		break;
+ 294:	60 c0       	rjmp	.+192    	; 0x356 <__vector_26+0x242>
+
+		//case 0x60 TWI slave receiver slave_address
+		case TW_SR_SLA_ACK:
+		// Set TWI status to receive mode with acknowledgment (ACK)
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 296:	85 ec       	ldi	r24, 0xC5	; 197
+ 298:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 9;
+ 29c:	89 e0       	ldi	r24, 0x09	; 9
+ 29e:	85 b9       	out	0x05, r24	; 5
+		break;
+ 2a0:	5a c0       	rjmp	.+180    	; 0x356 <__vector_26+0x242>
+
+		//Case 0x68
+		case TW_SR_ARB_LOST_SLA_ACK:
+		// Release the TWI peripheral to be ready for a new start condition
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 2a2:	85 ec       	ldi	r24, 0xC5	; 197
+ 2a4:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 10;
+ 2a8:	8a e0       	ldi	r24, 0x0A	; 10
+ 2aa:	85 b9       	out	0x05, r24	; 5
+		break;
+ 2ac:	54 c0       	rjmp	.+168    	; 0x356 <__vector_26+0x242>
+		//case 0x70
+		case TW_SR_GCALL_ACK:
+		// Set TWI status to receive mode with acknowledgment
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 2ae:	85 ec       	ldi	r24, 0xC5	; 197
+ 2b0:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 11;
+ 2b4:	8b e0       	ldi	r24, 0x0B	; 11
+ 2b6:	85 b9       	out	0x05, r24	; 5
+		break;
+ 2b8:	4e c0       	rjmp	.+156    	; 0x356 <__vector_26+0x242>
+		//case 0x78
+		case TW_SR_ARB_LOST_GCALL_ACK:
+		// Release the TWI peripheral to be ready for a new start condition
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 2ba:	85 ec       	ldi	r24, 0xC5	; 197
+ 2bc:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 12;
+ 2c0:	8c e0       	ldi	r24, 0x0C	; 12
+ 2c2:	85 b9       	out	0x05, r24	; 5
+		break;
+ 2c4:	48 c0       	rjmp	.+144    	; 0x356 <__vector_26+0x242>
+		
+		//case 0x80
+		case TW_SR_DATA_ACK:
+		// Read received data and send ACK for the next byte
+		received_data_buffer[received_index] = TWDR;
+ 2c6:	e0 91 22 01 	lds	r30, 0x0122	; 0x800122 <__data_end>
+ 2ca:	f0 e0       	ldi	r31, 0x00	; 0
+ 2cc:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7e00bb>
+ 2d0:	e7 5d       	subi	r30, 0xD7	; 215
+ 2d2:	fe 4f       	sbci	r31, 0xFE	; 254
+ 2d4:	80 83       	st	Z, r24
+
+		// Increment the index for the next received byte
+		received_index = (received_index + 1);
+ 2d6:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <__data_end>
+ 2da:	8f 5f       	subi	r24, 0xFF	; 255
+ 2dc:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <__data_end>
+
+		if (received_index < (BUFFER_SIZE)) {
+ 2e0:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <__data_end>
+ 2e4:	84 30       	cpi	r24, 0x04	; 4
+ 2e6:	30 f4       	brcc	.+12     	; 0x2f4 <__vector_26+0x1e0>
+			// If it's not the last byte, send ACK
+			TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 2e8:	85 ec       	ldi	r24, 0xC5	; 197
+ 2ea:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 13;
+ 2ee:	8d e0       	ldi	r24, 0x0D	; 13
+ 2f0:	85 b9       	out	0x05, r24	; 5
+ 2f2:	31 c0       	rjmp	.+98     	; 0x356 <__vector_26+0x242>
+		}
+		else {
+			// If it's the last byte, prepare to send NACK
+			TWCR = (1 << TWINT) | (0 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 2f4:	85 e8       	ldi	r24, 0x85	; 133
+ 2f6:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+			PORTB = 14;
+ 2fa:	8e e0       	ldi	r24, 0x0E	; 14
+ 2fc:	85 b9       	out	0x05, r24	; 5
+ 2fe:	2b c0       	rjmp	.+86     	; 0x356 <__vector_26+0x242>
+		break;
+
+		//case 0x88
+		case TW_SR_DATA_NACK:
+		// Receive data
+		receive_Data();
+ 300:	eb de       	rcall	.-554    	; 0xd8 <receive_Data>
+		// Set TWI status to ready for a new start condition
+		//received_index = 0;
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 302:	85 ec       	ldi	r24, 0xC5	; 197
+ 304:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 15;
+ 308:	8f e0       	ldi	r24, 0x0F	; 15
+ 30a:	85 b9       	out	0x05, r24	; 5
+		
+		
+		break;
+		//case 0x90
+		case TW_SR_GCALL_DATA_ACK:
+		receive_Data();
+ 30c:	24 c0       	rjmp	.+72     	; 0x356 <__vector_26+0x242>
+ 30e:	e4 de       	rcall	.-568    	; 0xd8 <receive_Data>
+		PORTB = 16;
+ 310:	80 e1       	ldi	r24, 0x10	; 16
+ 312:	85 b9       	out	0x05, r24	; 5
+		// Set TWI status to ready for a new start condition
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 314:	85 ec       	ldi	r24, 0xC5	; 197
+ 316:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		
+		break;
+
+		//case 0x98
+		case TW_SR_GCALL_DATA_NACK:
+		receive_Data();
+ 31a:	1d c0       	rjmp	.+58     	; 0x356 <__vector_26+0x242>
+ 31c:	dd de       	rcall	.-582    	; 0xd8 <receive_Data>
+		// Set TWI status to ready for a new start condition
+		//received_index = 0;
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 31e:	85 ec       	ldi	r24, 0xC5	; 197
+ 320:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 17;
+ 324:	81 e1       	ldi	r24, 0x11	; 17
+ 326:	85 b9       	out	0x05, r24	; 5
+		break;
+		//case 0xF8
+		case TW_NO_INFO:
+		printf("TWI slave device did not respond\n");
+ 328:	16 c0       	rjmp	.+44     	; 0x356 <__vector_26+0x242>
+ 32a:	80 e0       	ldi	r24, 0x00	; 0
+ 32c:	91 e0       	ldi	r25, 0x01	; 1
+ 32e:	7c d0       	rcall	.+248    	; 0x428 <puts>
+		PORTB = 18;
+ 330:	82 e1       	ldi	r24, 0x12	; 18
+ 332:	85 b9       	out	0x05, r24	; 5
+		break;
+ 334:	10 c0       	rjmp	.+32     	; 0x356 <__vector_26+0x242>
+		//case 0x00
+		case TW_BUS_ERROR:
+		// Release the internal hardware and clear TWSTO
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 336:	85 ec       	ldi	r24, 0xC5	; 197
+ 338:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		PORTB = 19;
+ 33c:	83 e1       	ldi	r24, 0x13	; 19
+ 33e:	85 b9       	out	0x05, r24	; 5
+		break;
+ 340:	0a c0       	rjmp	.+20     	; 0x356 <__vector_26+0x242>
+		
+		//In the case where a STOP condition or repeated START condition has been received while still addressed as a slave
+		case TW_SR_STOP:
+		PORTB = 20;
+ 342:	84 e1       	ldi	r24, 0x14	; 20
+ 344:	85 b9       	out	0x05, r24	; 5
+		// Set TWI status to ready for a new start condition
+		received_index = 0;
+ 346:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <__data_end>
+		TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN) | (1 << TWIE);
+ 34a:	85 ec       	ldi	r24, 0xC5	; 197
+ 34c:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7e00bc>
+		break;
+ 350:	02 c0       	rjmp	.+4      	; 0x356 <__vector_26+0x242>
+
+		default:
+		PORTB = 21;
+ 352:	85 e1       	ldi	r24, 0x15	; 21
+ 354:	85 b9       	out	0x05, r24	; 5
+		
+		break;
+	}
+
+	// Clear the TWI interrupt flag
+	TWCR |= (1 << TWINT);
+ 356:	ec eb       	ldi	r30, 0xBC	; 188
+ 358:	f0 e0       	ldi	r31, 0x00	; 0
+ 35a:	80 81       	ld	r24, Z
+ 35c:	80 68       	ori	r24, 0x80	; 128
+ 35e:	80 83       	st	Z, r24
+}
+ 360:	ff 91       	pop	r31
+ 362:	ef 91       	pop	r30
+ 364:	bf 91       	pop	r27
+ 366:	af 91       	pop	r26
+ 368:	9f 91       	pop	r25
+ 36a:	8f 91       	pop	r24
+ 36c:	7f 91       	pop	r23
+ 36e:	6f 91       	pop	r22
+ 370:	5f 91       	pop	r21
+ 372:	4f 91       	pop	r20
+ 374:	3f 91       	pop	r19
+ 376:	2f 91       	pop	r18
+ 378:	0f 90       	pop	r0
+ 37a:	0b be       	out	0x3b, r0	; 59
+ 37c:	0f 90       	pop	r0
+ 37e:	0f be       	out	0x3f, r0	; 63
+ 380:	0f 90       	pop	r0
+ 382:	1f 90       	pop	r1
+ 384:	18 95       	reti
+
+00000386 <init_PWM>:
+ 386:	84 b1       	in	r24, 0x04	; 4
+ 388:	88 61       	ori	r24, 0x18	; 24
+ 38a:	84 b9       	out	0x04, r24	; 4
+ 38c:	81 b1       	in	r24, 0x01	; 1
+ 38e:	8f ef       	ldi	r24, 0xFF	; 255
+ 390:	81 b9       	out	0x01, r24	; 1
+ 392:	85 b5       	in	r24, 0x25	; 37
+ 394:	82 60       	ori	r24, 0x02	; 2
+ 396:	85 bd       	out	0x25, r24	; 37
+ 398:	84 b5       	in	r24, 0x24	; 36
+ 39a:	83 60       	ori	r24, 0x03	; 3
+ 39c:	84 bd       	out	0x24, r24	; 36
+ 39e:	08 95       	ret
+
+000003a0 <sumo_init>:
+///////////////////////////////////////////////////////////////////////////////////////////
+/* Functions */
+
+void sumo_init() /* Init function for Sumo-robot */
+{
+	init_PWM();
+ 3a0:	f2 df       	rcall	.-28     	; 0x386 <init_PWM>
+	init_Styr_Slave();
+ 3a2:	92 de       	rcall	.-732    	; 0xc8 <init_Styr_Slave>
+ 3a4:	78 94       	sei
+	sei();
+ 3a6:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <dataRecieved>
+	dataRecieved = 0;
+ 3aa:	08 95       	ret
+
+000003ac <styrUnit>:
+ 3ac:	81 11       	cpse	r24, r1
+
+
+
+//wheelSpeedDirectionLR = leftWheelSpeed, rightWheelSpeed, leftWheelDirection, rightWheelDirection
+void styrUnit(uint8_t leftWheelSpeed, uint8_t rightWheelSpeed, uint8_t leftWheelDirection, uint8_t rightWheelDirection){
+	if((leftWheelSpeed == 0) && (rightWheelSpeed == 0)){
+ 3ae:	07 c0       	rjmp	.+14     	; 0x3be <styrUnit+0x12>
+ 3b0:	61 11       	cpse	r22, r1
+ 3b2:	05 c0       	rjmp	.+10     	; 0x3be <styrUnit+0x12>
+		TCCR0A |= (0<<COM0A1) | (0<<COM0A0); // COM0Ax = Right wheels // Clear OC0A on compare match set OC0A at BOTTOM // non-inverting mode
+ 3b4:	94 b5       	in	r25, 0x24	; 36
+ 3b6:	94 bd       	out	0x24, r25	; 36
+		TCCR0A |= (0<<COM0B1) | (0<<COM0B0); // COM0Bx = Left wheels // Clear
+ 3b8:	94 b5       	in	r25, 0x24	; 36
+ 3ba:	94 bd       	out	0x24, r25	; 36
+ 3bc:	06 c0       	rjmp	.+12     	; 0x3ca <styrUnit+0x1e>
+	}else{
+		TCCR0A |= (1<<COM0A1) | (0<<COM0A0); // COM0Ax = Right wheels // Clear OC0A on compare match set OC0A at BOTTOM // non-inverting mode
+ 3be:	94 b5       	in	r25, 0x24	; 36
+ 3c0:	90 68       	ori	r25, 0x80	; 128
+ 3c2:	94 bd       	out	0x24, r25	; 36
+		TCCR0A |= (1<<COM0B1) | (0<<COM0B0); // COM0Bx = Left wheels // Clear
+ 3c4:	94 b5       	in	r25, 0x24	; 36
+ 3c6:	90 62       	ori	r25, 0x20	; 32
+ 3c8:	94 bd       	out	0x24, r25	; 36
+	};
+	
+	if (leftWheelDirection == rightWheelDirection) { //Checks if wheel sides have same directions
+ 3ca:	42 13       	cpse	r20, r18
+ 3cc:	0a c0       	rjmp	.+20     	; 0x3e2 <styrUnit+0x36>
+		if(!leftWheelDirection){ // sets direction "backwards"
+ 3ce:	41 11       	cpse	r20, r1
+ 3d0:	04 c0       	rjmp	.+8      	; 0x3da <styrUnit+0x2e>
+			PORTA &= ~(1<<PORTA0) & ~(1<<PORTA1);
+ 3d2:	92 b1       	in	r25, 0x02	; 2
+ 3d4:	9c 7f       	andi	r25, 0xFC	; 252
+ 3d6:	92 b9       	out	0x02, r25	; 2
+ 3d8:	0f c0       	rjmp	.+30     	; 0x3f8 <styrUnit+0x4c>
+			} else if(leftWheelDirection) { //Sets direction "forward"
+			PORTA |= (1<<PORTA0) | (1<<PORTA1);
+ 3da:	92 b1       	in	r25, 0x02	; 2
+ 3dc:	93 60       	ori	r25, 0x03	; 3
+ 3de:	92 b9       	out	0x02, r25	; 2
+ 3e0:	0b c0       	rjmp	.+22     	; 0x3f8 <styrUnit+0x4c>
+		};
+	}else if(leftWheelDirection != rightWheelDirection){ // sets direction if wanna turn fast right or left
+		if(rightWheelDirection && !leftWheelDirection){
+ 3e2:	22 23       	and	r18, r18
+ 3e4:	29 f0       	breq	.+10     	; 0x3f0 <styrUnit+0x44>
+ 3e6:	41 11       	cpse	r20, r1
+ 3e8:	07 c0       	rjmp	.+14     	; 0x3f8 <styrUnit+0x4c>
+			PORTA &=  ~(1<<PORTA1);
+ 3ea:	11 98       	cbi	0x02, 1	; 2
+			PORTA |=  (1<<PORTA0);
+ 3ec:	10 9a       	sbi	0x02, 0	; 2
+ 3ee:	04 c0       	rjmp	.+8      	; 0x3f8 <styrUnit+0x4c>
+		}else if(!rightWheelDirection && leftWheelDirection){
+ 3f0:	44 23       	and	r20, r20
+ 3f2:	11 f0       	breq	.+4      	; 0x3f8 <styrUnit+0x4c>
+			PORTA &=  ~(1<<PORTA0);
+ 3f4:	10 98       	cbi	0x02, 0	; 2
+			PORTA |=  (1<<PORTA1);
+ 3f6:	11 9a       	sbi	0x02, 1	; 2
+		}
+	};
+	OCR0B = leftWheelSpeed; // Set speed of right wheel
+ 3f8:	88 bd       	out	0x28, r24	; 40
+	OCR0A = rightWheelSpeed;  // Set speed of right wheel
+ 3fa:	67 bd       	out	0x27, r22	; 39
+ 3fc:	08 95       	ret
+
+000003fe <main>:
+/* Main-functions for driving Sumo */
+
+
+int main(void)
+{
+	sumo_init();
+ 3fe:	d0 df       	rcall	.-96     	; 0x3a0 <sumo_init>
+	while (1){
+		if (dataRecieved == 1){
+			styrUnit(received_data_buffer[0], received_data_buffer[1], received_data_buffer[2], received_data_buffer[3]);
+ 400:	c9 e2       	ldi	r28, 0x29	; 41
+ 402:	d1 e0       	ldi	r29, 0x01	; 1
+
+int main(void)
+{
+	sumo_init();
+	while (1){
+		if (dataRecieved == 1){
+ 404:	80 91 28 01 	lds	r24, 0x0128	; 0x800128 <dataRecieved>
+ 408:	81 30       	cpi	r24, 0x01	; 1
+ 40a:	e1 f7       	brne	.-8      	; 0x404 <__LOCK_REGION_LENGTH__+0x4>
+			styrUnit(received_data_buffer[0], received_data_buffer[1], received_data_buffer[2], received_data_buffer[3]);
+ 40c:	2b 81       	ldd	r18, Y+3	; 0x03
+ 40e:	4a 81       	ldd	r20, Y+2	; 0x02
+ 410:	69 81       	ldd	r22, Y+1	; 0x01
+ 412:	88 81       	ld	r24, Y
+ 414:	cb df       	rcall	.-106    	; 0x3ac <styrUnit>
+			dataRecieved = 0;
+ 416:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <dataRecieved>
+ 41a:	f4 cf       	rjmp	.-24     	; 0x404 <__LOCK_REGION_LENGTH__+0x4>
+
+0000041c <__vector_default>:
+		}
+	};
+	return 0;
+}
+
+ISR(BADISR_vect) {
+ 41c:	1f 92       	push	r1
+ 41e:	0f 92       	push	r0
+ 420:	0f b6       	in	r0, 0x3f	; 63
+ 422:	0f 92       	push	r0
+ 424:	11 24       	eor	r1, r1
+ 426:	ff cf       	rjmp	.-2      	; 0x426 <__vector_default+0xa>
+
+00000428 <puts>:
+ 428:	0f 93       	push	r16
+ 42a:	1f 93       	push	r17
+ 42c:	cf 93       	push	r28
+ 42e:	df 93       	push	r29
+ 430:	e0 91 2f 01 	lds	r30, 0x012F	; 0x80012f <__iob+0x2>
+ 434:	f0 91 30 01 	lds	r31, 0x0130	; 0x800130 <__iob+0x3>
+ 438:	23 81       	ldd	r18, Z+3	; 0x03
+ 43a:	21 ff       	sbrs	r18, 1
+ 43c:	1b c0       	rjmp	.+54     	; 0x474 <puts+0x4c>
+ 43e:	8c 01       	movw	r16, r24
+ 440:	d0 e0       	ldi	r29, 0x00	; 0
+ 442:	c0 e0       	ldi	r28, 0x00	; 0
+ 444:	f8 01       	movw	r30, r16
+ 446:	81 91       	ld	r24, Z+
+ 448:	8f 01       	movw	r16, r30
+ 44a:	60 91 2f 01 	lds	r22, 0x012F	; 0x80012f <__iob+0x2>
+ 44e:	70 91 30 01 	lds	r23, 0x0130	; 0x800130 <__iob+0x3>
+ 452:	db 01       	movw	r26, r22
+ 454:	18 96       	adiw	r26, 0x08	; 8
+ 456:	ed 91       	ld	r30, X+
+ 458:	fc 91       	ld	r31, X
+ 45a:	19 97       	sbiw	r26, 0x09	; 9
+ 45c:	88 23       	and	r24, r24
+ 45e:	31 f0       	breq	.+12     	; 0x46c <puts+0x44>
+ 460:	09 95       	icall
+ 462:	89 2b       	or	r24, r25
+ 464:	79 f3       	breq	.-34     	; 0x444 <puts+0x1c>
+ 466:	df ef       	ldi	r29, 0xFF	; 255
+ 468:	cf ef       	ldi	r28, 0xFF	; 255
+ 46a:	ec cf       	rjmp	.-40     	; 0x444 <puts+0x1c>
+ 46c:	8a e0       	ldi	r24, 0x0A	; 10
+ 46e:	09 95       	icall
+ 470:	89 2b       	or	r24, r25
+ 472:	19 f0       	breq	.+6      	; 0x47a <puts+0x52>
+ 474:	8f ef       	ldi	r24, 0xFF	; 255
+ 476:	9f ef       	ldi	r25, 0xFF	; 255
+ 478:	02 c0       	rjmp	.+4      	; 0x47e <puts+0x56>
+ 47a:	8d 2f       	mov	r24, r29
+ 47c:	9c 2f       	mov	r25, r28
+ 47e:	df 91       	pop	r29
+ 480:	cf 91       	pop	r28
+ 482:	1f 91       	pop	r17
+ 484:	0f 91       	pop	r16
+ 486:	08 95       	ret
+
+00000488 <_exit>:
+ 488:	f8 94       	cli
+
+0000048a <__stop_program>:
+ 48a:	ff cf       	rjmp	.-2      	; 0x48a <__stop_program>

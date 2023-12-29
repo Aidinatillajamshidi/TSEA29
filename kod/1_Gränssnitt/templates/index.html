@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robot Control Interface</title>
+</head>
+<link rel="shortcut icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/static/css/style.css">
+<body>
+<!--new-->
+
+<div id="map-container">
+    <div id="map">MAP</div>
+</div>
+
+<div class="flex-container">
+  <div id="log-container" class="log-container">
+    <div id="commandLog" class="command-log"></div>
+  </div>
+
+  <div class="control-container">
+    <div id = "lwsSpeedLog" class="info-box"></div>
+    <br>
+    <div id = "rwsSpeedLog" class="info-box"></div>
+    <br>
+  <!--<div id = "dxyLog" class="info-box"></div> 
+    <br>
+    <div id = "firSensorLog" class="info-box"></div>
+    <br>
+    <div id = "rirSensorLog" class="info-box"></div>-->
+  </div>
+
+  <div class="command-container">
+    <button class="button" onclick="sendCommand('auto')">Auto</button>
+    <button class="button" onclick="sendCommand('manual')" >Manual</button>
+    <button class="button" onclick="startScan()">Start Scan</button>
+    <br>
+  </div>
+  <div class="control-container">
+    <button class="button_dir" onmousedown="handleButtonEvent(event, 'start', 'forward')" onmouseup="handleButtonEvent(event, 'end', 'forward')" ontouchstart="handleButtonEvent(event, 'start', 'forward')" ontouchend="handleButtonEvent(event, 'end', 'forward')">&#x2191</button>
+    <div class="flex_button_dir">
+      <button class="button_dir" onmousedown="handleButtonEvent(event, 'start', 'left')" onmouseup="handleButtonEvent(event, 'end', 'left')" ontouchstart="handleButtonEvent(event, 'start', 'left')" ontouchend="handleButtonEvent(event, 'end', 'left')">&#x2190</button>
+      <button class="button_dir" onmousedown="handleButtonEvent(event, 'start', 'back')" onmouseup="handleButtonEvent(event, 'end', 'back')" ontouchstart="handleButtonEvent(event, 'start', 'back')" ontouchend="handleButtonEvent(event, 'end', 'back')">&#x2193</button>
+      <button class="button_dir"  onmousedown="handleButtonEvent(event, 'start', 'right')" onmouseup="handleButtonEvent(event, 'end', 'right')" ontouchstart="handleButtonEvent(event, 'start', 'right')" ontouchend="handleButtonEvent(event, 'end', 'right')">&#x2192</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/robot.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>
+</html>
